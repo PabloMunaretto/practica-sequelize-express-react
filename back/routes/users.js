@@ -11,7 +11,7 @@ router.post("/", (req, res, next) => {
 });
 
 router.get("/:id", (req, res, next) => {
-  User.findByPk(req.params.id).then((user) => res.send(user));
-});
+  User.findByPk(req.params.id).then((user) => res.send(user))
+})
 
 module.exports = router;
